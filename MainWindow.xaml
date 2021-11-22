@@ -1,0 +1,41 @@
+﻿<mah:MetroWindow x:Class="MweMahAppsRangeSliderBug.MainWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:local="clr-namespace:MweMahAppsRangeSliderBug"
+                 xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+                 mc:Ignorable="d"
+                 Title="MainWindow" Height="450" Width="800">
+    <mah:MetroWindow.DataContext>
+        <local:MainWindowViewModel></local:MainWindowViewModel>
+    </mah:MetroWindow.DataContext>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Column="1" Height="35" Content="Change Visibility" Command="{Binding ExampleChangeVisibility}"/>
+
+        <TextBox Grid.Row="1" Grid.Column="0" Height="30" Width="150" Text="{Binding LowerValue, ElementName=sldExample}"/>
+        
+        <mah:RangeSlider x:Name="sldExample" Grid.Row="1" Grid.Column="1" Height="35" 
+                         Visibility="{Binding ExampleSliderVisible}" 
+                         TickPlacement="BottomRight"
+                         TickFrequency="25"
+                         MinRangeWidth="0"
+                         MinRange="0"
+                         Minimum="0"
+                         Maximum="500"/>
+
+        <TextBox Grid.Row="1" Grid.Column="2" Height="30" Width="150" Text="{Binding UpperValue, ElementName=sldExample}"/>
+        
+    </Grid>
+</mah:MetroWindow>

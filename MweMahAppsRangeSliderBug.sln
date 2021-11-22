@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MweMahAppsRangeSliderBug", "MweMahAppsRangeSliderBug.csproj", "{AAEEDCA4-4A68-4191-8476-EA992A1A0D63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAEEDCA4-4A68-4191-8476-EA992A1A0D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAEEDCA4-4A68-4191-8476-EA992A1A0D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAEEDCA4-4A68-4191-8476-EA992A1A0D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAEEDCA4-4A68-4191-8476-EA992A1A0D63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98FBCF64-5FE4-4DF7-842D-981AB3B9D4A9}
+	EndGlobalSection
+EndGlobal
